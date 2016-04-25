@@ -1,0 +1,132 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body
+{ font-family: 'Indie Flower', cursive;
+
+}
+.fb-profile img.fb-image-lg{
+    z-index: 0;
+    width: 100%;  
+    margin-bottom: 10px;
+}
+
+.fb-image-profile
+{
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
+    width: 20%; 
+}
+
+@media (max-width:768px)
+{
+    
+.fb-profile-text>h1 
+{
+    font-weight: 700;
+    font-size:16px;
+}
+
+.fb-image-profile
+{
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%; 
+}
+}
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  
+  
+  /*Quote*/
+
+blockquote{
+    border-left:none
+}
+
+.quote-badge{
+    background-color: rgba(0, 0, 0, 0.2);   
+}
+
+.quote-box{
+    
+    overflow: hidden;
+    margin-top: -50px;
+    padding-top: -100px;
+    border-radius: 17px;
+    background-color: #4ADFCC;
+    margin-top: 25px;
+    color:white;
+    width: 325px;
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+    
+}
+
+.quotation-mark{
+    
+    margin-top: -10px;
+    font-weight: bold;
+    font-size:100px;
+    color:white;
+    
+}
+
+.quote-text{
+    
+    font-size: 19px;
+    margin-top: -65px;
+}
+
+/*sports page*/
+body { padding-top: 100px; }
+.nav.nav-justified > li > a { position: relative; }
+.nav.nav-justified > li > a:hover,
+.nav.nav-justified > li > a:focus { background-color: transparent; }
+.nav.nav-justified > li > a > .quote {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #13c0ba;
+    border-radius: 15px;
+    color: #fff;  
+}
+.nav.nav-justified > li.active > a > .quote { opacity: 1; }
+.nav.nav-justified > li > a > img { box-shadow: 0 0 0 5px #13c0ba; }
+.nav.nav-justified > li > a > img { 
+    max-width: 100%; 
+    opacity: .3; 
+    -webkit-transform: scale(.8,.8);
+            transform: scale(.8,.8);
+    -webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.nav.nav-justified > li.active > a > img,
+.nav.nav-justified > li:hover > a > img,
+.nav.nav-justified > li:focus > a > img { 
+    opacity: 1; 
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tab-pane .tab-inner { padding: 30px 0 20px; }
